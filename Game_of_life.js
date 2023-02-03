@@ -227,7 +227,6 @@ for (let i = 0; i < arrKeys.length; i++){
                   (newGrid[arrKeys[i]][j]).status = "dead";
                   return "This Cell Is Now "+ (newGrid[arrKeys[i]][j]).status;
               } else { return ''}
-              
           }
          kill();
         // console.log(newGrid[arrKeys[i]][j]);
