@@ -7,102 +7,9 @@
     <meta name="description" content="Game_of_life">
     <meta name="Author" content="Inusa_Naimu">
     <title>THE GAME Of LIFE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-*{
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-body{
-    color: aliceblue;
-    background-color: #282c34;
-    text-transform: capitalize;
-}
-
-.dail{
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-}
-h4{
-    margin: auto;
-    margin-bottom: 8px;
-    border-bottom: 3px solid green;
-    font-weight: 400;
-    width: 300px;
-}
-fieldset{
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-}
-
-/* input:hover{
-    cursor: pointer;
-} */
-
-/* input:active{
-    border-width: 0;
-} */
-
-.btn{
- margin: 8px;
- padding: 5px;
- font-weight: 600;
- font-size: large;
- cursor: pointer; 
-
-}
-
-.btn_start{ 
-    background-color:green;
-}
-.btn_stop{
-    background-color:#b92337
-}
-.btn_reset{
-    background-color:#6e1621;
-    color:antiquewhite;
-}
-
-.grid-container{
-    word-wrap: none;
-    overflow-wrap: none;
-    display: grid;
-   /* grid-template-rows: repeat(auto-fit, minmax(1px, 0fr)); /* rows will adjust to the screen size */
-    width: fit-content;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    padding: 4px;
-    border: 3px solid green;
-    grid-gap: 0px;
-}
-
-.grid-row{
-    width: fit-content;
-    word-wrap: none;
-    overflow: none;
-    align-self: center;
-    text-align: center;
-    margin: auto;
-    padding: 0;
-}
-.grid-cell{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #fff;
-}
-.alive{
-    background-color: black;
-}
-.dead{
-    background-color: white;
-}
 
 
 
@@ -111,7 +18,7 @@ fieldset{
 
             <div class="dail">
                 <h4>This Game Can Be Observed In The Console</h4>
-                <fieldset id="fieldset" style="display: inline-block; width: 300px;">
+                <fieldset  class="fieldset" id="fieldset" style="display: inline-block; width: 300px;">
                     <label for="row">rows:</label>
                     <input id="row" type="text"  placeholder="Number of rows"> <br/><br/>
                     <label for="column">columns:</label>
@@ -124,12 +31,12 @@ fieldset{
 
             <div id="rootDiv"></div>
 
-            <!-- <div class=" grid-container">
+            <div class=" grid-container">
                 <div class=" grid-row"> 
-                    <div class=" grid-cell "> </div>
-                    <div class=" grid-cell "> </div>
-                    <div class=" grid-cell "> </div>
-                    <div class=" grid-cell "> </div>
+                    <div class=" alive grid-cell "> </div>
+                    <div class=" dead grid-cell "> </div>
+                    <div class=" alive grid-cell "> </div>
+                    <div class=" dead grid-cell "> </div>
                     <div class=" grid-cell "> </div>
                     <div class=" grid-cell "> </div>
                     <div class=" grid-cell "> </div>
@@ -216,7 +123,7 @@ fieldset{
                     <div class=" grid-cell "> </div>
                 </div>
 
-            </div> -->
+            </div>
 
 </body>
 
