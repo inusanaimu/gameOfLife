@@ -67,7 +67,7 @@ h4{
     text-align: center;
     align-items: center;
     padding: 4px;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     grid-gap: 0px;
 }
 
