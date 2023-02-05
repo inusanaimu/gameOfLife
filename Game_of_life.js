@@ -103,7 +103,8 @@ var intervalId;
 function repeating() {
   intervalId = setInterval(()=>{
      console.log(initializeGame);
-      liveOrDie()}, 500)
+      liveOrDie();
+      createGameGrid(initializeGame)}, 500)
 }
 function terminateRepeating(arg){
     const btnStart = document.getElementById('btnStart')
