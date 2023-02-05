@@ -77,8 +77,11 @@ h4{
     overflow: none;
     align-self: center;
     text-align: center;
-    margin: auto;
+    height: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
+
 }
 .grid-cell{
     display: inline-block;
