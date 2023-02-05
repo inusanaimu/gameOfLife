@@ -35,10 +35,16 @@ function newGame(){
         console.log("start Clicked")
         
         // collecting and declaring variables 
-        const rows = Number(document.getElementById('row').value);
-        const columns = Number(document.getElementById('column').value);
+        let rows = Number(document.getElementById('row').value);
+        let columns = Number(document.getElementById('column').value);
         console.log(rows);
         console.log(columns)
+
+        if ((rows <= 0) || (columns <= 0)) {
+            rows = 20
+            columns = 40
+        }
+        // if(!isNaN(rows) && !isNaN(columns) && (rows > 0) && (columns > 0)){
         if(!isNaN(rows) && !isNaN(columns) && (rows > 0) && (columns > 0)){
             btnStart.innerHTML = 'Pause'
       
