@@ -318,7 +318,7 @@ for (let i = 0; i < arrKeys.length; i++){
 return initializeGame = deepCopy(newGrid);
 }
 
-// helper function to make a deep copy of an object
+// helper function to make a deep copy of an object the game of life
 function deepCopy(obj) {
   let copy;
   if (obj === null || typeof obj !== "object") {
